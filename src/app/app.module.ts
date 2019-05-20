@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { ConfigModule } from '@spartacus/core';
 import { StorefrontModule, translations, defaultCmsContentConfig } from '@spartacus/storefront';
+import { GmapComponent } from './gmap/gmap.component';
  
 @NgModule({
   imports:      [ BrowserModule, FormsModule, StorefrontModule.withConfig ({
@@ -18,7 +19,7 @@ import { StorefrontModule, translations, defaultCmsContentConfig } from '@sparta
 }),
 ConfigModule.withConfigFactory(defaultCmsContentConfig)
  ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent, HelloComponent, GmapComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
